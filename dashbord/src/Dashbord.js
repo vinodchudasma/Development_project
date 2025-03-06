@@ -13,17 +13,17 @@ const Dashbord = () => {
                         <div className="d-flex align-items-center justify-content-between">
                             <h3>Dashbord</h3>
                             <div>
-                                <Link to='/dashbord'>Home</Link>/ViewUsers
+                                <Link to='/dashbord'>Home</Link>/Dashbord
                             </div>
                         </div>
                     </Col>
                 </Row>
                 <hr />
-                <h1 className="text-center text-info">Our Facts and Figures</h1>
-                <p className="text-center" >Interested in building web applications and want to become a skilled web developer? Our Web Development Course is a perfect choice as it gives students a comprehensive understanding of web development technologies such as HTML, CSS, JavaScript, and PHP. With limited batch sizes, highly qualified teachers, Personalised attention, and job-oriented training, our students are well-equipped to secure jobs with top industry players. Join us now and take your first step towards a successful career in web development.</p>
+                <h1 className="text-center text-dark    "> OUR FACTS AND FIGURES</h1>
+                <p className="text-center bg_color" >Interested in building web applications and want to become a skilled web developer? Our Web Development Course is a perfect choice as it gives students a comprehensive understanding of web development technologies such as HTML, CSS, JavaScript, and PHP. With limited batch sizes, highly qualified teachers, Personalised attention, and job-oriented training, our students are well-equipped to secure jobs with top industry players. Join us now and take your first step towards a successful career in web development.</p>
                 <Row className="p-3">
                     <Col lg={3} md={6}>
-                        <div className="bg-info text-white rounded mb-lg-0 mb-3 icon_hover ">
+                        <div className="bg-info  text-white rounded mb-lg-0 mb-3 icon_hover ">
                             <div className="d-flex  justify-content-between p-3">
                                 <div>
                                     <h3>1 Lac +</h3>
@@ -61,7 +61,7 @@ const Dashbord = () => {
                     </Col>
 
                     <Col lg={3} md={6}>
-                        <div className="bg-warning  rounded mb-lg-0 mb-3 icon_hover ">
+                        <div className="bg-warning text-white  rounded mb-lg-0 mb-3 icon_hover ">
                             <div className="d-flex  justify-content-between p-3">
                                 <div>
                                     <h3>19+</h3>
@@ -99,17 +99,15 @@ const Dashbord = () => {
                     </Col>
 
                 </Row>
-                <h1 className="text-center text-info">Key Highlights</h1>
+                <h1 className="text-center text-dark gradient_text"> KEY HIGHLIGHTS</h1>
                 <Row className="p-3">
                     <Col lg={3} md={6}>
                         <div className="bg-info text-white text-center rounded mb-lg-0 mb-3 icon_hover ">
                             <div>
                                 <h3><HiMiniUserGroup className="card_icon opacity-25"> </HiMiniUserGroup  ></h3>
-                                <p>Limited Students Batch</p>
+                                <p className="pb-4">Limited Students Batch</p>
                             </div>
-                            <div className="trans text-center rounded-bottom">
-                                <a href="$">Moreinfo</a><BsArrowRightShort className="fs-3"></BsArrowRightShort>
-                            </div>
+                            
                         </div>
                     </Col>
 
@@ -117,11 +115,9 @@ const Dashbord = () => {
                         <div className="bg-warning text-white text-center rounded mb-lg-0 mb-3 icon_hover  ">
                         <div>
                                 <h3><HiUser className="card_icon opacity-25" >  </HiUser> </h3>
-                                <p>Personalised Attention</p>
+                                <h6 className="pb-4">Personalised Attention</h6>
                             </div>
-                            <div className="trans text-center rounded-bottom">
-                                <a href="$">Moreinfo</a><BsArrowRightShort className="fs-3"></BsArrowRightShort>
-                            </div>
+                            
 
                         </div>
                     </Col>
@@ -130,11 +126,9 @@ const Dashbord = () => {
                         <div className="bg-info text-center  rounded mb-lg-0 mb-3 icon_hover ">
                         <div>
                                 <h3><HiMiniUserGroup className="card_icon opacity-25"> </HiMiniUserGroup  ></h3>
-                                <p>Highly Qualified Teachers</p>
+                                <h6 className="pb-4">Highly Qualified Teachers</h6>
                             </div>
-                            <div className="trans text-center rounded-bottom">
-                                <a href="$">Moreinfo</a><BsArrowRightShort className="fs-3"></BsArrowRightShort>
-                            </div>
+                            
                         </div>
 
                     </Col>
@@ -142,11 +136,9 @@ const Dashbord = () => {
                         <div className="bg-warning text-white text-center rounded mb-lg-0 mb-3 icon_hover   ">
                         <div>
                                 <h3><HiClock className="card_icon opacity-25" > </HiClock></h3>
-                                <p>Flexible Batch Timings</p>
+                                <h6 className="pb-4">Flexible Batch Timings</h6>
                             </div>
-                            <div className="trans text-center rounded-bottom">
-                                <a href="$">Moreinfo</a><BsArrowRightShort className="fs-3"></BsArrowRightShort>
-                            </div>
+                            
                         </div>
 
 
@@ -158,11 +150,9 @@ const Dashbord = () => {
                         <div className=" bg-warning text-white text-center rounded mb-lg-0 mb-3 icon_hover ">
                             <div>
                                 <h3><HiMiniUserGroup className="card_icon opacity-25"> </HiMiniUserGroup  ></h3>
-                                <p>Interactive Learning</p>
+                                <p className="pb-4">Interactive Learning</p>
                             </div>
-                            <div className="trans text-center rounded-bottom">
-                                <a href="$">Moreinfo</a><BsArrowRightShort className="fs-3"></BsArrowRightShort>
-                            </div>
+                            
                         </div>
                     </Col>
 
@@ -170,11 +160,9 @@ const Dashbord = () => {
                         <div className=" bg-info text-white text-center rounded mb-lg-0 mb-3 icon_hover  ">
                         <div>
                                 <h3><HiMiniClock className="card_icon opacity-25" />  </h3>
-                                <p>Live Projects</p>
+                                <p className="pb-4">Live Projects</p>
                             </div>
-                            <div className="trans text-center rounded-bottom">
-                                <a href="$">Moreinfo</a><BsArrowRightShort className="fs-3"></BsArrowRightShort>
-                            </div>
+                           
 
                         </div>
                     </Col>
@@ -183,11 +171,9 @@ const Dashbord = () => {
                         <div className="bg-warning  text-center  rounded mb-lg-0 mb-3 icon_hover ">
                         <div>
                                 <h3><HiMiniBriefcase className="card_icon opacity-25" /></h3>
-                                <p>Career Support</p>
+                                <p className="pb-4">Career Support</p>
                             </div>
-                            <div className="trans text-center rounded-bottom">
-                                <a href="$">Moreinfo</a><BsArrowRightShort className="fs-3"></BsArrowRightShort>
-                            </div>
+                            
                         </div>
 
                     </Col>
@@ -195,11 +181,9 @@ const Dashbord = () => {
                         <div className="bg-info text-white text-center rounded mb-lg-0 mb-3 icon_hover   ">
                         <div>
                                 <h3><HiMiniBriefcase className="card_icon opacity-25" /></h3>
-                                <p>Job Oriented Training</p>
+                                <p className="pb-4">Job Oriented Training</p>
                             </div>
-                            <div className="trans text-center rounded-bottom">
-                                <a href="$">Moreinfo</a><BsArrowRightShort className="fs-3"></BsArrowRightShort>
-                            </div>
+                           
                         </div>
 
 

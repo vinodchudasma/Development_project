@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Routes, Route, Link } from "react-router-dom"
+import { Routes, Route, Link, Outlet } from "react-router-dom"
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -12,7 +12,6 @@ import Collapse from 'react-bootstrap/Collapse';
 import { BsBookmarks } from "react-icons/bs";
 import { BiBookAdd, BiLogOut } from "react-icons/bi";
 import { PiStudentDuotone } from "react-icons/pi";
-import Login from './Login';
 import Adduser from './Adduser';
 import Viewuser from './Viewuser';
 import Addstudent from './Addstudent';
@@ -97,10 +96,13 @@ const Header = () => {
                   aria-controls="example-collapse-text"
                   aria-expanded={open} className='fs-5 mb-1 me-3'></AiOutlineDashboard>Dashbord1111111</Link>
               </li> */}
-              <Collapse in={open} >
+              <Collapse in={open} > 
                 <div>
                   <div id="example-collapse-text" className='w-100py-2 peta_menu rounded py-2'>
-                    <Link to='dashbord' className=' ps-4 bar '><AiOutlineDashboard className='fs-5 mb-1 me-3'></AiOutlineDashboard>Dashbord</Link>
+                    <Link to='dashbord' className='ps-4 bar'>
+                      <AiOutlineDashboard className='fs-5 mb-1 me-3' />
+                      Dashboard
+                    </Link>
                   </div>
                   {/* <div id="example-collapse-text" className='w-100py-2 peta_menu rounded py-2'>
                     <Link to='dashbord' className=' ps-4 bar '><AiOutlineDashboard className='fs-5 mb-1 me-3'></AiOutlineDashboard>Dashbord</Link>
@@ -118,7 +120,7 @@ const Header = () => {
               <Collapse in={open1} >
                 <div>
                   <div id="example-collapse-text" className='w-100 mb-2 py-2 peta_menu rounded'>
-                    <Link to='adduser' className=' ps-4 bar'><AiOutlineUserAdd className='fs-5 mb-1 me-3'></AiOutlineUserAdd>Add User</Link>
+                    <Link to='/adduser' className=' ps-4 bar'><AiOutlineUserAdd className='fs-5 mb-1 me-3'></AiOutlineUserAdd>Add User</Link>
                   </div>
                   <div id="example-collapse-text" className='w-100 py-2 peta_menu rounded'>
                     <Link to='viewuser' className=' ps-4 bar'><AiOutlineUserAdd className='fs-5 mb-1 me-3'></AiOutlineUserAdd>View User</Link>
@@ -218,7 +220,7 @@ const Header = () => {
               <Collapse in={open} >
                 <div>
                   <div id="example-collapse-text" className='w-100py-2 peta_menu rounded py-2'>
-                    <Link to='dashbord' className=' ps-4 bar '><AiOutlineDashboard className='fs-5 mb-1 me-3'></AiOutlineDashboard>Dashbord</Link>
+                    <Link to='/dashbord' className=' ps-4 bar '><AiOutlineDashboard className='fs-5 mb-1 me-3'></AiOutlineDashboard>Dashbord</Link>
                   </div>
                 </div>
               </Collapse>
@@ -279,7 +281,7 @@ const Header = () => {
 
 
               <li className=' dash rounded  py-2 '>
-                <Link className=' ps-3 bar ' onClick={() => setOpen4(!open4)}>  <PiStudentDuotone
+                <Link className=' ps-3 bar ' onClick={() => setOpen4(!open4)}  >  <PiStudentDuotone
                   aria-controls="example-collapse-text"
                   aria-expanded={open4} className='fs-5 mb-1 me-3'></PiStudentDuotone>Admissions
                 </Link>
@@ -326,22 +328,8 @@ const Header = () => {
               </Navbar.Collapse>
             </Container>
           </Navbar>
-
-          
-
-
-          <Routes>
-            <Route path='dashbord' element={<Dashbord />} />
-            <Route path='adduser' element={<Adduser />} />
-            <Route path='viewuser' element={<Viewuser />} />
-            {/* <Route path='login' element={<Login />} /> */}
-            <Route path='addstudent' element={<Addstudent />} />
-            <Route path='addcourse' element={<Addcourse />} />
-            <Route path='addcontent' element={<Addcontent />} />
-            <Route path='viewcontent' element={<Viewcontent />} />
-            <Route path='viewstudent' element={<Viewstudent />} />
-            <Route path='viewcourse' element={<Viewcourse />} />
-          </Routes>
+          {/* {children} */}
+          <Outlet />
         </div>
 
       </div>
