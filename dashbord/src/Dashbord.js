@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 const Dashbord = () => {
     return (
         <>
-            <Container fluid className="p-3">
+            <Container fluid className="p-3 ">
                 <Row className="p-2 mx-0 bg-warning rounded">
                     <Col >
                         <div className="d-flex align-items-center justify-content-between">

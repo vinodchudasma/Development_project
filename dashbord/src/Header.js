@@ -186,7 +186,7 @@ const Header = () => {
           </div>
 
         </Offcanvas>
-        <div className="left d-md-block d-none border-end border-warning border-2" style={{ width: width }}>
+        <div className="left  d-md-block d-none border-end border-warning border-2" style={{ width: width }}>
           <div className="task ">
             <div className="logo d-flex  align-items-center">
               <img src={require('./img/AdminLTELogo.webp')} width={33} alt="" className='img_border rounded-pill' />
@@ -329,6 +329,7 @@ const Header = () => {
             </Container>
           </Navbar>
           {/* {children} */}
+
           <Outlet />
         </div>
 
